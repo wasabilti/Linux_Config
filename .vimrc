@@ -1,7 +1,9 @@
+
+
 " filetype off
 " set rtp+=~/.vim/bundle/Vundle.vim
 " filetype plugin indent on
-
+filetype indent plugin on
 
 
 set nu
@@ -29,6 +31,7 @@ filetype indent on
 set showmatch
 set matchtime=1
 
+set autoindent
 set smartindent
 
 
@@ -56,3 +59,7 @@ autocmd BufRead * normal zR
 " set search
 " set incsearch
 
+
+" key mapping
+map <C-C> :!./complie-tex.sh<CR>
+map <C-P> :r !pwd<CR>
