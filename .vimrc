@@ -1,9 +1,26 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'preservim/nerdtree'
+
+Plugin 'mattn/emmet-vim'
+"Plugin 'mattn/emmet-vim'
+
+call vundle#end() 
 
 
-" filetype off
-" set rtp+=~/.vim/bundle/Vundle.vim
-" filetype plugin indent on
-filetype indent plugin on
+filetype plugin indent on
+"filetype indent plugin on
+
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set encoding=utf-8
 
 
 set nu
@@ -43,8 +60,8 @@ set smartindent
 " set fold
 
 
-set foldmethod=syntax
-" set foldmethod=indent
+" set foldmethod=syntax
+ set foldmethod=indent
 autocmd BufRead * normal zR
 
 " set navigation
@@ -61,5 +78,5 @@ autocmd BufRead * normal zR
 
 
 " key mapping
-map <C-C> :!./complie-tex.sh<CR>
+map <C-C> :! ./complie-tex.sh<CR>
 map <C-P> :r !pwd<CR>
