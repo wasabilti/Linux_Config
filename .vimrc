@@ -18,7 +18,7 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " If you want :UltiSnipsEdit to split your window.
-"let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsEditSplit="vertical"
 
 call vundle#end() 
 
@@ -53,7 +53,7 @@ set smarttab
 
 set backspace=indent,eol,start
 
-filetype indent on
+" filetype indent on
 
 set showmatch
 set matchtime=1

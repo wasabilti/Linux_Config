@@ -1,4 +1,4 @@
-snippet "bf" "begin{figure} / end{}" b
+snippet "bf" "begin{figure} / end{}" br
 \begin{figure}[ht]
 \centering
 \includegraphics[height=${1:4}cm]{${2:filename}}
@@ -7,7 +7,7 @@ snippet "bf" "begin{figure} / end{}" b
 \end{figure}$0
 endsnippet
 
-snippet "bsf2" "begin two figure with 2 subfigure" b
+snippet "bsf2" "begin two figure with 2 subfigure" br
 \begin{figure}[ht]
 \centering
 	\subfigure[${1:}]{
@@ -22,7 +22,7 @@ snippet "bsf2" "begin two figure with 2 subfigure" b
 endsnippet
 
 
-snippet "bsf3" "begin two figure with 2 subfigure" b
+snippet "bsf3" "begin two figure with 2 subfigure" br
 \begin{figure}[ht]
 \centering
 	\subfigure[${1:}]{
@@ -40,29 +40,49 @@ snippet "bsf3" "begin two figure with 2 subfigure" b
 endsnippet
 
 
-snippet "beq" "\begin{equation} \end{equation}" b
+snippet "bsf4" "begin two figure with 2 subfigure" br
+\begin{figure}[ht]
+\centering
+	\subfigure[${1:}]{
+		\includegraphics[height=${2:4}cm]{${3:filename_}}
+	}
+	\subfigure[${4:}]{
+		\includegraphics[height=$2cm]{$3}
+	}
+	\subfigure[${4:}]{
+		\includegraphics[height=$2cm]{$3}
+	}
+	\subfigure[${4:}]{
+		\includegraphics[height=$2cm]{$3}
+	}
+\label{${4:filename}}
+\caption{${5:captionname}}
+\end{figure}$0
+endsnippet
+
+snippet "beq" "\begin{equation} \end{equation}" br
 \begin{equation}
 	${0:}
 \end{equation}
 endsnippet
 
 
-snippet "beql" "\begin{equation} \end{equation}" b
+snippet "beql" "\begin{equation} \end{equation}" br
 \begin{equation}\label{${1:labelname}}
 	${2:}
 \end{equation$0}
 endsnippet
 
-snippet "ci" "\cite{citename}" 
+snippet "ci" "\cite{citename}" r
 \cite{${0:citename}}
 endsnippet
 
 
-snippet "ref" "\ref{refname}" 
+snippet "ref" "\ref{refname}" r
 \cite{${0:refname}}
 endsnippet
 
 
-snippet "leq" "inline equation" 
+snippet "leq" "inline equation" r
  $ ${0:} $ 
 endsnippet
