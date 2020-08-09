@@ -12,6 +12,7 @@ Plugin 'preservim/nerdtree'
 Plugin 'mattn/emmet-vim'
 "Plugin 'mattn/emmet-vim'
 "
+"snips plugin
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -88,5 +89,5 @@ autocmd BufRead * normal zR
 
 
 " key mapping
-map <C-C> :! ./complie-tex.sh<CR>
+map <C-B> :w<CR> :! ./complie-tex.sh<CR>
 map <C-P> :r !pwd<CR>
