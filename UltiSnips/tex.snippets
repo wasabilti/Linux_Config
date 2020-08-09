@@ -1,0 +1,109 @@
+snippet "bf" "begin{figure} / end{}" br
+\begin{figure}[ht]
+\centering
+\includegraphics[height=${1:4}cm]{${2:filename}}
+\caption{${4:captionname}}
+\label{${3:label_name}}
+\end{figure}$0
+endsnippet
+
+snippet "bsf2" "begin two figure with 2 subfigure" br
+\begin{figure}[ht]
+\centering
+	\subfigure[${1:}]{
+		\includegraphics[height=${2:4}cm]{${3:filename_}}
+	}
+	\subfigure[${4:}]{
+		\includegraphics[height=$2cm]{$3}
+	}
+\caption{${5:captionname}}
+\label{${4:filename}}
+\end{figure}$0
+endsnippet
+
+
+snippet "bsf3" "begin two figure with 2 subfigure" br
+\begin{figure}[ht]
+\centering
+	\subfigure[${1:}]{
+		\includegraphics[height=${2:4}cm]{${3:filename_}}
+	}
+	\subfigure[${4:}]{
+		\includegraphics[height=$2cm]{$3}
+	}
+	\subfigure[${4:}]{
+		\includegraphics[height=$2cm]{$3}
+	}
+\caption{${5:captionname}}
+\label{${4:filename}}
+\end{figure}$0
+endsnippet
+
+
+snippet "bsf4" "begin two figure with 2 subfigure" br
+\begin{figure}[ht]
+\centering
+	\subfigure[${1:}]{
+		\includegraphics[height=${2:4}cm]{${3:filename_}}
+	}
+	\subfigure[${4:}]{
+		\includegraphics[height=$2cm]{$3}
+	}
+	\subfigure[${4:}]{
+		\includegraphics[height=$2cm]{$3}
+	}
+	\subfigure[${4:}]{
+		\includegraphics[height=$2cm]{$3}
+	}
+\caption{${5:captionname}}
+\label{${4:filename}}
+\end{figure}$0
+endsnippet
+
+snippet "b(egin)?eq(uation)?" "\begin{equation} \end{equation}" br
+\begin{equation}
+	${0:}
+\end{equation}
+endsnippet
+
+
+snippet "b(egin)?eq(uation)?l(abel)?" "\begin{equation} \end{equation}" br
+\begin{equation}\label{${1:labelname}}
+	${2:}
+\end{equation$0}
+endsnippet
+
+snippet "ci(te)?" "\cite{citename}" r
+\cite{${0:citename}}
+endsnippet
+
+
+snippet "ref" "\ref{refname}" r
+\ref{${0:refname}}
+endsnippet
+
+
+snippet "leq" "inline equation" r
+ $ ${0:} $ 
+endsnippet
+
+snippet "ch(apter)?" "\chapter{}" br
+\chapter{${1:chaptername}}
+endsnippet
+
+snippet "s(ub)?s(ection)?" "\subsection{}" br
+\subsection{${1:subsection}}
+endsnippet
+
+snippet "s(ub)?s(ub)?s(ection)?" "\subsubsection{}" br
+\subsubsection{${1:subsubsection}}
+endsnippet
+
+snippet "inp(ut)?" "\input{filename.tex}" br
+\input{${1:filename.tex}}
+endsnippet
+
+snippet "n(ew)?p(age)?" "\newpage" br
+\newpage
+
+endsnippet
